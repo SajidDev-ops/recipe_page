@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.section-1 {
+    list-style-position: inside;
+    list-style-type: disc;
+    padding: 20px;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.text-content {
+    padding: 20px;
+}
+
+.border {
+    background-color: lightpink;
+    line-height: 1.5;
+    padding: 20px;
+    position: relative;
+}
+
+.divider {
+    margin: 20px 0;
+    border: 0;
+    border-top: 2px solid #ddd;
+    width: 100%;
+}
+
+.heading-2 {
+    color: purple;
+}
+
+.header-8, .text-decoration {
+    color: #ff6600;
+}
+
+.color-5 {
+    color: blueviolet;
+}
+
+/* Flexbox for nutrition info */
+.nutrition-info p {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.nutrition-info p span {
+    display: block;
+}
+
+.nutrition-info .calories  {
+    border-bottom: 2px solid;
+    border-color:blanchedalmond;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 599px) {
+    .nutrition-info p {
+        flex-direction: row;
+        padding: 5px 0;
+    }
+
+    .border, .color, .head, .header, .text-content {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .image-container {
+        width: 100%;
+    }
+
+    .border, .color, .head, .header, .text-content {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .nutrition-info p {
+        padding: 5px 0;
+    }
+}
